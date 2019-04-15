@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+
+		body{
+			font-family: sans-serif;
+		}
+
+		label{
+			font-weight: bold;
+		}
+		
+		.box{
+			margin-right: 20%;
+			margin-left: 20%;
+			border:1px solid gray;
+			border-radius: 3px;
+			max-width: 60%;
+			box-shadow: 3px 3px 3px black;
+			padding: 30px;
+
+		}
+
+		input:hover{
+			background-color: lightgray;
+			border-color: black;
+		}
+
+		input:focus{
+			background-color: white;
+			border-color: gray;
+		}
+
+		.formataInput{
+			width: 100%;
+			height: 30px;
+			background-color: silver;
+			border-radius: 5px;
+			margin-top: 3px;
+		}
+
+		.box-campos{
+			margin-bottom: 15px;
+		}
+
+		.butao{
+			width: 100%;
+			height: 50px;
+			color: black;
+			font-size: 20px;
+			text-shadow: 1px 1px gray;
+            border-radius: 5px;
+            padding: 10px 0px 10px 0px;
+
+            background-color: #2ecc71;
+            border-top:5px solid #2ecc71;
+            border-left: 5px solid #2ecc71;
+            border-bottom: 5px solid #27ae60;
+            border-right: 5px solid #27ae60;
+
+		}
+
+		.butao:hover{
+			
+			background-color: #2ecc71;
+            border-bottom:5px solid #2ecc71;
+            border-right: 5px solid #2ecc71;
+            border-top: 5px solid #27ae60;
+            border-left: 5px solid #27ae60;
+		}
+
+	</style>
+</head>
+<body>
+    <div class="box">
+	<h1>Novo Usuário</h1>
+
+	<form>
+
+		<div class="box-campos">
+		<label for="nome">Nome</label>
+		<input class="formataInput" id="nome" type="text" name="nome" placeholder="Digite um nome"  required minlength="5">
+	    </div>
+
+		<br>
+
+		<div class="box-campos">
+		<label for="email">E-Mail</label>
+		<input class="formataInput" id="email" type="email" required placeholder="nome@email.com">
+		</div>
+
+		<br>
+
+		<div class="box-campos">
+		<label for="senha">Senha</label>
+		<input class="formataInput" id="senha" type="password" minlength="6" required>	
+		</div>
+
+		<br>
+
+		<div class="box-campos">
+		<label>Escolha suas frutas favoritas</label>
+		<input id="laranja" type="checkbox" value="laranja"><label for="laranja">Laranja</label>
+		<input id="maca" type="checkbox" value="maca"><label for="maca">Maçã</label>
+		<input id="banana" type="checkbox" value="banana"><label for="banana">Banana</label>
+		</div>
+		<br>
+
+		<div class="box-campos">
+		<label>Sexo</label>
+		<input name="sexo" id="f" type="radio" value="f"><label for="f">F</label>
+		<input name="sexo" id="m" type="radio" value="m"><label for="m">M</label>
+		</div>
+
+		<br>
+
+
+		<div class="box-campos">
+		<label for="cor">Escolha uma cor</label>
+		<input id="cor" type="color">	
+		</div>
+
+		<br>
+
+		<div class="box-campos">
+		<label for="aniversario">Data de Aniversário</label>
+        <input class="formataInput" id="aniversario" type="date" required>	
+		</div>
+
+        <br>
+
+        <div class="box-campos">
+        <label for="idade">Idade</label>
+        <input class="formataInput" id="idade" type="number" min="10">
+        </div>
+
+        <br>
+
+        <div class="box-campos">
+        <label for="nota">Nota</label>
+        <input  id="nota" type="range" min="0" max="10">
+        </div>
+
+        <br>
+
+        <div class="box-campos">
+        <label for="pagina">Página</label>
+        <input class="formataInput" id="pagina" type="url" placeholder="https://suapagina.com" >	
+        </div>
+
+        <br>
+
+        <div class="box-campos">
+        <input class="butao" type="submit" value="Cadastrar">	
+        </div>
+
+	</form>
+    </div>
+</body>
+</html>
